@@ -3,20 +3,10 @@ import string
 import tkinter as tk
 from tkinter import ttk
 import time
-import random
 
 
 # ------------------ Logic ------------------
 
-
-
-
-# def pick_random_pair(sequences):
-#     pair = random.choice(sequences)
-#     seq_a = pair["sequence_a"]
-#     seq_b = pair["sequence_b"]
-#     same = seq_a == seq_b
-#     return seq_a, seq_b, same
 
 def get_alphabet():
     mode = charset_var.get()

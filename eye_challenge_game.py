@@ -41,7 +41,7 @@ def load_leaderboard():
         try:
             with open(LEADERBOARD_FILE, 'r') as f:
                 return json.load(f)
-        except:
+        except:  # noqa: E722
             return []
     return []
 
@@ -716,7 +716,7 @@ def main():
     
     try:
         root.state('zoomed')  # Windows
-    except:
+    except:  # noqa: E722
         root.geometry(f"{root.winfo_screenwidth()}x{root.winfo_screenheight()-50}")
     
     MainMenu(root)
